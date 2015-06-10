@@ -47,7 +47,7 @@ REM CREATION DU FICHIER CONTENANT LES COMMANDES A EXECUTER SUR LE SERVEUR DISTAN
 @ECHO apt-get --just-print upgrade >> audit.sh
 @ECHO echo -e "\n----------------------------------------------------------------------------------------------------" >> audit.sh
 @ECHO echo -e "\nEXECUTION DE MySQLTuner :" >> audit.sh
-@ECHO wget -q https://raw.githubusercontent.com/major/MySQLTuner-perl/master/mysqltuner.pl >> audit.sh
+@ECHO wget -q -N https://raw.githubusercontent.com/major/MySQLTuner-perl/master/mysqltuner.pl >> audit.sh
 @ECHO perl ./mysqltuner.pl >> audit.sh
 @ECHO echo -e "\n----------------------------------------------------------------------------------------------------" >> audit.sh
 @ECHO echo -e "\nFIN DE L'AUDIT DE LA MACHINE %IP%" >> audit.sh
